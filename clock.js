@@ -35,5 +35,5 @@ function updateTime() {
 
 function startTime() {
     updateTime();
-    window.setInterval("updateTime()", 1);
+    window.setInterval("updateTime()", 1000);
 }
