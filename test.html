@@ -6,13 +6,8 @@
 <input type="button" value="回首頁" onclick="self.location.href='index.html'" ;"="" style="font-size:13pt; width:70px;height:30px;;color:#000000">
 <!DOCTYPE HTML>
 <html lang="en-US">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-    <title>全屏</title>
- 
- 
+
+<head> 
 <script type="text/javascript">
 
 (function(a, b) {
@@ -62,8 +57,9 @@
     
     
     </head>
+    
 <body>
-    <div id="loading" style="margin:10px auto;width:600px">正在加載...</div>
+    <div type="button"id="loading" style="font-size:13pt; width:70px;height:30px;color:#c44e4e">錯誤</div>
     <div id="theEnd"></div>
 
 <script type="text/javascript">
@@ -71,11 +67,10 @@
  function ck() {
     screenfull && screenfull.request();
 };
- 
-     // 在這裏寫你的代碼...    
+  
     var loading = document.getElementById('loading');
     loading.style.cursor = 'pointer';
-    loading.innerHTML = '全螢幕';
+    loading.innerHTML = '<img src="B.png">';
     loading.onclick = ck
     
  </script>
