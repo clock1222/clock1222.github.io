@@ -10,14 +10,14 @@ function updateTime() {
         pe = "AM";
         
 
-    // 抓AM或PM
+
     if (hr >= 12) {
         pe = "PM";
     } else {
         pe = "AM"
     }
 
-    // 轉換成兩位數
+    
     Number.prototype.pad = function(digits) {
         for (var n = this.toString(); n.length < digits; n = 0 + n);
         return n;
