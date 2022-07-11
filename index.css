@@ -11,3 +11,13 @@
     left:50%;
     transform: translateX(-50%) translateY(-50%);
     }
+    input{border:0;
+        background-color:#464544;
+        color:rgba(255, 255, 255, 0);
+        border-radius:10px;
+        cursor:pointer;}
+      
+      input:hover{
+        color:#ee0101;
+        background-color:rgba(139, 131, 131, 0.836);
+      }
