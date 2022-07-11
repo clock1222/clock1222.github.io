@@ -1,18 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
   }
-  
-  body {
+body {
+	height: 100vh;
 	width: 100%;
-	min-height: 100vh;
 	font-family: "Roboto", sans-serif;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	position: relative;
+	top:2%;
+	left: 38%;
+	position: fixed ;
   }
   .container form input {
 	  padding: 10px 15px;
@@ -25,7 +24,7 @@
 	  font-size: 1rem;
 	  outline: none;
 	  border: none;
-	  padding: 10px 15px;
+	  padding: 13px 15px;
 	  background: #ffffff00;
 	  color: #b6281b;
 	  cursor: pointer;
@@ -42,12 +41,7 @@
 	  }
   .container h5, .container h1, .container p {
 	  color: #ffffff;
-	  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-	  }
-  .container p {
-	  font-size: 1rem;
-	  width: 80%;
-	  margin: auto;
+	  text-shadow: 0 0 5px rgb(189, 189, 184);
 	  }
   
   .container .hidden {
@@ -55,17 +49,15 @@
 	  }
   .container .pickedTime {
 	  display: flex;
-	  flex-wrap: wrap;
-	  justify-content: center;
-	  align-items: center;
+
 	  }
   .container .pickedTime .time {
-	  margin: 1.5rem;
-	  padding: 0.5rem 1rem;
+	  margin: 0.5rem;
+	  padding: 8.5rem 0rem;
 	  background: #ffffff00;
 	  }
   .container .pickedTime .time span {
-	  font-size: 2.5rem;
+	  font-size:6rem;
 	  color: #b6281b;
 	  }
   .container .pickedTime .time p {
