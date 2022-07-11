@@ -56,7 +56,7 @@
 <body>
     <div type="button"id="loading" style="font-size:13pt; width:70px;height:30px;color:#c44e4e">錯誤</div>
     <div id="theEnd"></div>
-
+    <div style="left:10%;"     </div>
 <script type="text/javascript">
  
  function ck() {
@@ -73,16 +73,16 @@
 </body>
 </html>
 
-        <script>
-            document.oncontextmenu = function () { return false; };
-            document.onkeydown = function () {
-                if (window.event && window.event.keyCode == 123) {
-                    event.keyCode = 0;
-                    event.returnValue = false;
-                    return false;
-                }
-            };
-        </script>
+<script>
+    document.oncontextmenu = function () { return false; };
+    document.onkeydown = function () {
+        if (window.event && window.event.keyCode == 123) {
+            event.keyCode = 0;
+            event.returnValue = false;
+            return false;
+        }
+    };
+</script>      
 
 <title>CLOCK | 倒數計時器</title>
 <link rel="stylesheet" href="1.0.css">
@@ -93,7 +93,7 @@
 		<input type="time" name="time" id="time">
 		<button type="submit">Start</button>
 	</form>
-	<p class="hidden">截止日期<br><span id="until"></span></p>
+	<p class="hidden">結束時間:<br><span id="until"></span></p>
 	<p class="hidden">還剩的時間:</p>
 	<div class="pickedTime">
         <div class="time">
