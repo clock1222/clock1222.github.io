@@ -2,12 +2,10 @@
     padding: 0;
     margin: 0;
     }
-    
     body {
     background-color: rgb(9, 255, 0);
     height: 100vh;
     }
-    
     .container-clock {
     /* 置中 */
     position: absolute;
@@ -19,18 +17,15 @@
     width: 1000px;
     border-radius: 40px;
     }
-    
     .time {
     font-size: 170px;
     font-weight: 600px;
     text-align: center;
     }
-    
     .date {
     font-size: 40px;
     text-align: center;
     }
-    
     #period {
     font-size: 0px;
     }
