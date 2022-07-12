@@ -1,0 +1,121 @@
+<link rel="icon" href="clock.ico" type="image/x-icon">
+<!DOCTYPE HTML>
+<html lang="zh-TW">
+
+<head> 
+<script type="text/javascript">
+
+(function(a, b) {
+    "use strict";
+    var c = function() {
+        var a = [["requestFullscreen", "exitFullscreen", "fullscreenchange", "fullscreen", "fullscreenElement"], ["webkitRequestFullScreen", "webkitCancelFullScreen", "webkitfullscreenchange", "webkitIsFullScreen", "webkitCurrentFullScreenElement"], ["mozRequestFullScreen", "mozCancelFullScreen", "mozfullscreenchange", "mozFullScreen", "mozFullScreenElement"]];
+        for (var c = 0,
+        d = a.length; c < d; c++) {
+            var e = a[c];
+            if (e[1] in b) return e
+        }
+    } ();
+    if (!c) return a.screenfull = !1;
+    var d = "ALLOW_KEYBOARD_INPUT" in Element,
+    e = {
+        init: function() {
+            return b.addEventListener(c[2],
+            function(a) {
+                e.isFullscreen = b[c[3]],
+                e.element = b[c[4]],
+                e.onchange(a)
+            }),
+            this
+        },
+        isFullscreen: b[c[3]],
+        element: b[c[4]],
+        request: function(a) {
+            
+            a = a || b.documentElement,
+            a[c[0]](d && Element.ALLOW_KEYBOARD_INPUT),
+            b.isFullscreen || a[c[0]]();
+            //alert("dd");
+        },
+        exit: function() {
+            b[c[1]]()
+        },
+        toggle: function(a) {
+            this.isFullscreen ? this.exit() : this.request(a)
+        },
+        onchange: function() {}
+    };
+    a.screenfull = e.init()
+})(window, document)
+
+</script>
+
+    
+    
+    </head>
+    
+<body>
+    <div type="button"id="loading" style="font-size:13pt; width:70px;height:30px;color:#c44e4e">錯誤</div>
+    <div id="theEnd"></div>
+
+<script type="text/javascript">
+ 
+ function ck() {
+    screenfull && screenfull.request();
+};
+  
+    var loading = document.getElementById('loading');
+    loading.style.cursor = 'pointer';
+    loading.innerHTML = '<img src="B.png">';
+    loading.onclick = ck
+    
+ </script>
+ 
+</body>
+</html>
+
+        <script>
+            document.oncontextmenu = function () { return false; };
+            document.onkeydown = function () {
+                if (window.event && window.event.keyCode == 123) {
+                    event.keyCode = 0;
+                    event.returnValue = false;
+                    return false;
+                }
+            };
+        </script>
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta name="google-site-verification" content="8A_bizSXnCFI1Y8QzN5PffdSdHVYWeDEzTK-XTnu50M" /> 
+<meta charset="UTF-8">
+<title>CLOCK | 時鐘</title>
+
+<link "googlee5f7745bb0a1a82f.html">
+<link rel="shortcut icon" href="clock.ico" type="image/x-icon"> 
+<link rel="stylesheet" href="clock.css">
+</head>
+<body onload="startTime()">
+
+<div class="container-clock">
+<div class="datetime">
+<div class="time">
+<span id="hour">00</span> :
+<span id="minutes">00</span> :
+<span id="seconds">00</span>
+<span id="period">AM</span>
+</div>
+<div class="date">
+<span id="year">year</span>年    
+<span id="month">月</span>
+<span id="daynum">00</span>日
+<span id="dayname">星期</span>
+</div>
+</div>
+</div>
+
+</body> 
+<script src="clock.js"></script>
+
+</html>
+
