@@ -16,11 +16,11 @@
     }
     input{border:0;
         color: rgb(255, 255, 255);
-        background-color:#4645447e;
+        background-color:#4645444f;
         border-radius:10px;
         cursor:pointer;}
       input:hover{
       transition: 0.5s linear;
-      background: rgba(255, 255, 255, 0.959);
-      color: rgb(0, 0, 0);
+      background: rgba(255, 255, 255, 0.849);
+      color: rgba(0, 0, 0, 0.863);
     }
