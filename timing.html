@@ -1,0 +1,30 @@
+           <!DOCTYPE html>
+            <html lang="zh-TW">
+                <body bgcolor="#000000">
+            <head>
+                <meta charset="UTF-8">
+                <title>CLOCK | 碼表</title>
+                <!-- CSS連結 -->
+                <link rel="stylesheet" href="timing.css">
+            </head>
+            
+            <body onload="show();">
+            
+                <div class="container">
+                    <span id="time"></span>
+                    <button class="btn" type="button" onclick="start()"style="font-size:35pt; width:100px;height:65px">開始</button>
+                    <button class="btn" type="button" onclick="stop();"style="font-size:35pt; width:100px;height:65px">暫停</button>
+                    <button class="btn" type="button" onclick="reset();"style="font-size:35pt; width:100px;height:65px">清除</button>
+                </div>
+                <p>按下空白鍵可以「開始」或「暫停」</p>
+                <p>按下C可以「清除」</p>
+            </body>
+            
+            <!-- JS連結 -->
+            <script src="timing.js">
+            </script>
+            
+            </html>
+
+
+      
