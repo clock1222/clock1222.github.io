@@ -1,0 +1,26 @@
+<link rel="icon" href="smile.ico" type="image/x-icon">
+<body background="smile-2.jpg"></body>
+<body bgcolor="#ffffff">
+<script>
+    document.oncontextmenu = function () { return false; };
+    document.onkeydown = function () {
+        if (window.event && window.event.keyCode == 123) {
+            event.keyCode = 0;
+            event.returnValue = false;
+            return false;
+        }
+    };
+</script>
+    
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>盡情發洩吧^_^ | 填寫</title>
+<link rel="stylesheet" href="smile-write.css">
+</head>
+<body>
+    <div style="z-index:0;" id="iframe_block"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLScV84b2eWgLZGgAlgz5ObMjjGN3hmern2WgxJycO_OeoTztiw/viewform?embedded=true">載入中…</iframe></div>  
+</body>
+</html>

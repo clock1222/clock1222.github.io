@@ -1,0 +1,30 @@
+<link rel="icon" href="smile.ico" type="image/x-icon">
+<body background="smile-2.jpg"></body>
+<body bgcolor="#ffffff">
+<script>
+    document.oncontextmenu = function () { return false; };
+    document.onkeydown = function () {
+        if (window.event && window.event.keyCode == 123) {
+            event.keyCode = 0;
+            event.returnValue = false;
+            return false;
+        }
+    };
+</script>
+    
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>盡情發洩吧^_^ | 關於</title>
+<link rel="stylesheet" href="smile-about.css">
+</head>
+<h1>關於</h1>
+<hr/>
+<p>1.這個網站設計是給人們可以在利用文字的方式來發洩出自己的壓力，如有出現廣告類的那種流言將會直接刪除!</p>
+<p>2.查看的試算表更新較慢，可能需要幾分鐘後才會看到!</p>
+<input type="button" value="回首頁" onclick="self.location.href='smile-index.html'"/;" 
+style="font-size:16pt; width:80px;height:35px;">
+</body>
+</html>
