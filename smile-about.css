@@ -1,10 +1,5 @@
-      body {
-        height: 10vh;
-        position: fixed ;
-        top:0%;
+input{
         left:0.15%;
-      }
-      input{
         justify-content: center; 
         align-items: center; 
         position: fixed; 
@@ -18,4 +13,4 @@
       input:hover{
       background: rgba(255, 255, 255, 0.795);
       color: rgba(0, 0, 0, 0.863);
-    }
+      }
