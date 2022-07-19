@@ -1,25 +1,15 @@
-
-$(document).ready(function(){
-	$('#fullScreenSupport').html(
-  	screenfull.enabled
-    ? '瀏覽器支援全螢幕API'
-    : '瀏覽器不支援全螢幕API');
-});
-
-$('#fullScreen').click(function() {
-  if (screenfull.enabled) {
-    screenfull.request();
+document.addEventListener("keypress", function(e) {
+    if (e.keyCode === 13) {
+      toggleFullScreen();
+    }
+  }, false);
+  
+  function toggleFullScreen() {
+    if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      }
+    }
   }
-});
-
-$('#imageFullScreen').click(function() {
-  if (screenfull.enabled) {
-    screenfull.request(document.getElementById('image'));
-  }
-});
-
-$('#cancelFullScreen').click(function() {
-  if (screenfull.enabled) {
-    screenfull.exit();
-  }
-});
