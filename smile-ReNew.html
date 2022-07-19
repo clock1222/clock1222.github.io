@@ -1,0 +1,32 @@
+<link rel="icon" href="smile.ico" type="image/x-icon">
+<link rel="stylesheet" href="smile-ReNew.css">
+
+<script>
+    document.oncontextmenu = function () { return false; };
+    document.onkeydown = function () {
+        if (window.event && window.event.keyCode == 123) {
+            event.keyCode = 0;
+            event.returnValue = false;
+            return false;
+        }
+    };
+</script>
+
+<style>
+    body {
+        margin:0;
+        padding:0;
+        background: #000 url(ReNew.jpg) center center fixed no-repeat;
+        -moz-background-size: cover;
+        background-size: cover;
+        }		
+    </style> 
+<body bgcolor="#ffffff">
+<title>留言板 | 更新日誌</title>
+<body>
+<h1>更新日誌</h1>
+<hr>
+<P>2022/07/18:已更換背景縮放方式。</p>
+<p>2022/07/19:已新增主頁按鈕四方間距。</p>
+<p>2022/07/19:已新增主頁按鈕字已置中。</p>
+</body>
