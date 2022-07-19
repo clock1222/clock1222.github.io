@@ -37,3 +37,13 @@ function startTime() {
     updateTime();
     window.setInterval("updateTime()", 1000);
 }
+
+document.body.onkeyup = function(e) {
+    // 按下空白鍵
+    if (e.keyCode == 32) {
+        if (pressed) {
+            pressed = esc;
+        } 
+    }
+
+}
