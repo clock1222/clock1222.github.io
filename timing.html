@@ -1,25 +1,35 @@
-<link rel="icon" href="clock.ico" type="image/x-icon">
+<link rel="shortcut icon" href="clock.ico" type="image/x-icon"> 
+<link rel="stylesheet" href="10index.css">
+<script src="10index.js"></script>
 
-    <!DOCTYPE html>
-    <html lang="zh-TW">
-    <body bgcolor="#000000">
-    <head>
-        <meta charset="UTF-8">
-        <title>CLOCK | 碼表</title>
-        <link rel="stylesheet" href="timing.css">
-        </head>
-            
-            <body onload="show();">
-            
-                <div class="container">
-                    <span id="time"></span>
-                    <button class="btn" type="button" onclick="start()"style="font-size:35pt; width:100px;height:65px">開始</button>
-                    <button class="btn" type="button" onclick="stop();"style="font-size:35pt; width:100px;height:65px">暫停</button>
-                    <button class="btn" type="button" onclick="reset();"style="font-size:35pt; width:100px;height:65px">清除</button>
-                </div>
-                <p>按下空白鍵可以「開始」或「暫停」</p>
-                <p>按下C可以「清除」</p>
-            </body>
-            
-    <script src="timing.js"></script>
-    </html>
+<script>
+    document.oncontextmenu = function () { return false; };
+    document.onkeydown = function () {
+        if (window.event && window.event.keyCode == 123) {
+            event.keyCode = 0;
+            event.returnValue = false;
+            return false;
+        }
+    };
+</script>
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>^_^</title>
+</head>
+<body>
+    <h1>已偵測到最新網址</h1>
+    <hr>
+    <p>將於10秒後自動跳轉至最新網址。</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>	
+    <div class="progessbar">
+    <div class="text"></div>
+    <div class="bar"></div>
+</div>
+
+<div class="msg"></div>
+    <meta http-equiv="refresh" content="9.76;url=https://1514.myqnapcloud.com:1222/timing.html ">
+</body>
+</html>
