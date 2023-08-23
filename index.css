@@ -40,7 +40,6 @@ body{
     height:7px;
 }
 .waitloadimg{
-    content:'';
     position:absolute;
     width:140px;
     height:140px;
