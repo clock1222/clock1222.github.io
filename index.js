@@ -29,13 +29,8 @@ function timingup(){
   document.getElementById("errortimes").innerText = new URLSearchParams(window.parent.location.search).get('ErrorTimes').toString().padStart(2, '0');
   document.getElementById("oktimes").innerText = new URLSearchParams(window.parent.location.search).get('OkTimes').toString().padStart(2, '0');
   //Oking
-  if(parseInt(new URLSearchParams(window.parent.location.search).get('OkTimes'))>1 && End != false){
+  if(parseInt(new URLSearchParams(window.parent.location.search).get('OkTimes'))>1){
     document.getElementById("txt").innerText = "與伺服器連線成功！";
-    window.parent.location.reload(true);
-    End == false;
-  }else{
-    document.getElementById("txt").innerText = "與伺服器連線成功！";
-    return;
   }
 }
 window.setInterval("timingup()", 0);
