@@ -39,7 +39,7 @@ body{
     width:7px;
     height:7px;
 }
-.waitloadC::before{
+.waitloadimg{
     content:'';
     position:absolute;
     width:140px;
@@ -82,7 +82,7 @@ body{
     top:15px;
     right:11px;
 }
-.waitloadC::before{
+.waitloadimg{
     width:90px;
     height:90px;
 }
@@ -105,7 +105,7 @@ body{
     top:10px;
     right:10px;
 }
-.waitloadC::before{
+.waitloadimg{
     width:70px;
     height:70px;
 }
@@ -131,7 +131,7 @@ body{
     top:7px;
     right:4px;
 }
-.waitloadC::before{
+.waitloadimg{
     width:42px;
     height:42px;
 }
