@@ -23,7 +23,7 @@ body{
 .times{
     position: absolute;
     bottom:20px;
-    font-size: 40px;
+    font-size: 18px;
 }
 .waitloadC{
     position: relative;
@@ -71,9 +71,6 @@ body{
 .txt{
     font-size:40px;
 }
-.times{
-    font-size: 30px;
-}
 .waitloadC{
     width:100px;
     height:100px;
@@ -93,9 +90,6 @@ body{
 @media (max-width:600px){
 .txt{
     font-size:30px;
-}
-.times{
-    font-size: 20px;
 }
 .waitloadC{
     width:80px;
@@ -121,7 +115,7 @@ body{
     font-size:25px;
 }
 .times{
-    font-size: 15px;
+    font-size: 12px;
 }
 .waitloadC{
     width:50px;
