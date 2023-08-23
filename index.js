@@ -2,13 +2,12 @@ var timing = 0,
     times = 0,
     errortimes = 0,
     oktimes = 0;
-var End = true;
 var Nowtime = new Date();
 var NowTiming = Nowtime.getTime();
-var jsURL = new URLSearchParams(window.parent.location.search);
+var jsURL = new URLSearchParams(window.location.search);
 jsURL.set('ErrorTimeStart', NowTiming);
-var jsnewURL = window.parent.location.protocol + '//' + window.parent.location.host + window.parent.location.pathname + '?' + jsURL.toString();
-window.parent.history.replaceState({path: jsnewURL}, '', jsnewURL);
+var jsnewURL = window.location.protocol + '//' + window.location.host + window.location.pathname + '?' + jsURL.toString();
+window.history.replaceState({path: jsnewURL}, '', jsnewURL);
 function timingup(){
   var StartTiming = new URLSearchParams(window.parent.location.search).get('ErrorTimeStart');
   var Nowtime = new Date();
