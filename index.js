@@ -9,7 +9,7 @@ jsURL.set('ErrorTimeStart', NowTiming);
 var jsnewURL = window.location.protocol + '//' + window.location.host + window.location.pathname + '?' + jsURL.toString();
 window.history.replaceState({path: jsnewURL}, '', jsnewURL);
 function timingup(){
-  var StartTiming = new URLSearchParams(window.parent.location.search).get('ErrorTimeStart');
+  var StartTiming = new URLSearchParams(window.location.search).get('ErrorTimeStart');
   var Nowtime = new Date();
   var NowTiming = Nowtime.getTime();
   var NTing = NowTiming - StartTiming;
