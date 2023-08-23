@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" id="Logoicon" href="/logo/clock.ico" type="image/x-icon">
+    <title>嘗試連線中...</title>
+    <!-- css連結 -->
+    <link rel="stylesheet" href="/webkit-scrollbar.css">
+    <link rel="stylesheet" href="/Waitload/index.css">
+    <link rel="stylesheet" href="./index.css">
+    <!-- JQuery連結 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <span class="time"><span id="timingH">00</span>:<span id="timingM">00</span>:<span id="timingS">00</span></span>
+<div class="main">
+    <span class="txt" id="txt">正在嘗試與伺服器連線...</span>
+    <div class="mainb">
+    <div class="waitloadC" style="--clr:rgb(168, 214, 214);"></div>
+    </div>
+</div>
+    <span class="times">已嘗試連線 <span id="times">0</span> 次，失敗 <span id="errortimes">0</span> 次，成功 <span id="oktimes">0</span> 次</span>
+</body>
+<script src="./index.js"></script>
+</html>
