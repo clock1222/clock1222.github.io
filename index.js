@@ -19,9 +19,5 @@ function timingup(){
   document.getElementById("timingH").innerText = NTH;
   document.getElementById("timingM").innerText = NTM;
   document.getElementById("timingS").innerText = NTS;
-  //Oking
-  if(parseInt(new URLSearchParams(window.parent.location.search).get('OkTimes'))>1){
-    document.getElementById("txt").innerText = "與伺服器連線成功！";
-  }
 }
 window.setInterval("timingup()", 0);
